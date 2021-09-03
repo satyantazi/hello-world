@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>martial arts simulator</title>
+
+    <style>
+        .action-btn {
+            border: 1px solid rgb(155, 155, 155);
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+            background: transparent;
+        }
+
+        .action-btn:hover {
+            background: rgb(233, 233, 233);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        <h1>martial arts simulator</h1>
+
+        <div style="text-align: center;">
+            <div
+                style="background-image: url(images/background.jpg); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                <canvas id="my-canvas" height="500" width="500"></canvas>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <button class="action-btn" id="kick">Kick (Left Arrow Key)</button>
+            <button class="action-btn" id="punch">Punch (Right Arrow Key)</button>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
